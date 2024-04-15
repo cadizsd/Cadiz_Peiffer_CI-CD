@@ -36,5 +36,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest /Cadiz_Peiffer_CI-CD/pythonProject3/Tests
+        pytest /home/runner/work/Cadiz_Peiffer_CI-CD/Cadiz_Peiffer_CI-CD/pythonProject3/Tests
     
