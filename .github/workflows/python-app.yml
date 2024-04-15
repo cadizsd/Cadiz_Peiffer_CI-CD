@@ -36,4 +36,15 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest /Cadiz_Peiffer_CI-CD/pythonProject3/Tests
+        pytest 
+    - name: Archive Pytest test report
+      uses: actions/upload-artifact@v3
+      with:
+        name: SuperTest-test-report
+        path: report
+          
+    - name: Upload Pytest report to GitHub
+      uses: actions/upload-artifact@v3
+      with:
+        name: Pytest-test-report
+        path: report
