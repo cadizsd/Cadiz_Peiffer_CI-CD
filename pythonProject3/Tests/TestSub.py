@@ -1,6 +1,6 @@
 import unittest
 
-from sub import sub
+from pythonProject3.sub import sub
 
 
 class MyTestCase(unittest.TestCase):
